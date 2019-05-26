@@ -1,6 +1,10 @@
 import yaml
+import os
 
-path = "C:/Users/WONDER/Downloads/file.yaml"
+script_dir = os.path.dirname(__file__)
+rel_path = 'Data\\file.yaml'
+path = os.path.join(script_dir, rel_path)
+
 data = yaml.safe_load(open(path))
 
 typeOfData = type(data)
