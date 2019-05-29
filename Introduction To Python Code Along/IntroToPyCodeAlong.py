@@ -11,7 +11,6 @@ typeOfData = type(data)
 
 city = data['info']['city']
 venue = data['info']['venue']
-
 teams = data['info']['teams']
 teamsCount = len(teams)
 
