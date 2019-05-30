@@ -48,7 +48,8 @@ for deliveries in data['innings'][1]['2nd innings']['deliveries']:
 ballFacedBySCGanguly = batsman1stInnings.get("SC Ganguly")
 batsmanWithMostSixes = sixCount1stInnings.most_common(1)[0][0]
 batsmanWithMostSixesCount = sixCount1stInnings.most_common(1)[0][1]
- 
+
+#Print Required Output
 print("Total no of ball Faced By SC Ganguly:", ballFacedBySCGanguly)
 print(manOfTheMatch, "was man of match and he scored", runsByManOfTheMatch, "runs")
 print("Batsman played in 1st innings are", ", ".join(list(batsman1stInningsAll.keys())))
