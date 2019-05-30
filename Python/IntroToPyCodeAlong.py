@@ -5,7 +5,9 @@ script_dir = os.path.dirname(__file__)
 rel_path = 'Data\\file.yaml'
 path = os.path.join(script_dir, rel_path)
 
-data = yaml.safe_load(open(path))
+f = open(path)
+data = yaml.safe_load(f)
+f.close()
 
 typeOfData = type(data)
 
